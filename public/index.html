@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link href="./css/tailwind.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+  <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+    <div id="display" class="bg-gray-200 text-right p-4 rounded-lg mb-4 text-2xl">0</div>
+    <div class="grid grid-cols-4 gap-4">
+      <button class="bg-gray-300 p-4 rounded-lg text-lg" data-action="clear">C</button>
+      <button class="bg-gray-300 p-4 rounded-lg text-lg" data-action="append" data-value="/">/</button>
+      <button class="bg-gray-300 p-4 rounded-lg text-lg" data-action="append" data-value="*">*</button>
+      <button class="bg-gray-300 p-4 rounded-lg text-lg" data-action="append" data-value="-">-</button>
+      
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="7">7</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="8">8</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="9">9</button>
+      <button class="bg-gray-300 p-4 rounded-lg text-lg row-span-2" data-action="append" data-value="+">+</button>
+      
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="4">4</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="5">5</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="6">6</button>
+      
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="1">1</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="2">2</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value="3">3</button>
+      <button class="bg-blue-500 text-white p-4 rounded-lg text-lg row-span-2" data-action="calculate">=</button>
+      
+      <button class="bg-gray-200 p-4 rounded-lg text-lg col-span-2" data-action="append" data-value="0">0</button>
+      <button class="bg-gray-200 p-4 rounded-lg text-lg" data-action="append" data-value=".">.</button>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
